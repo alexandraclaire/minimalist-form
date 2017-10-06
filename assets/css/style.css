@@ -1,6 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background:#fde5f2;
+  margin: -20px 0 0 0;
 }
 .wrapper {
     width: 100%;
@@ -8,8 +8,21 @@ body {
     margin:0 auto;
     margin-top:100px;
 }
+section {
+  padding-bottom:2em;
+  padding-top:1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#minimal-forms {
+  background:#fde5f2;
+}
 h1 {
   text-align:center;
+}
+.h100 {
+  min-height:100vh;
 }
 .form-dots a {
   color: rgba(0,0,0,0.3) !important;
@@ -35,6 +48,7 @@ h1 {
   background-color: transparent;
   z-index: 1;
   border-radius: 10px;
+  font-size:16px;
 }
 .v3-simple-form input:active, .v3-simple-form input:focus {
   outline:none;
@@ -70,4 +84,57 @@ h1 {
     font-size: 30px;
     color: rgba(0,0,0,0.3);
     margin-bottom:0 !important;
+}
+
+/*cards*/
+.card-wrapper {
+  display: flex;
+  min-height: 600px;
+  justify-content: center;
+  align-items: center;
+  overflow-x:hidden;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    position: absolute;
+    transition: 0.5s all ease;
+}
+
+.card.black {
+    background: black;
+}
+
+.card.white {
+    background: grey;
+}
+
+.open-right-max {
+    transform: translateX(100px) translateY(40px) rotate(45deg);
+}
+.open-right {
+        transform: translateX(50px) translateY(10px) rotate(25deg);
+}
+.open-left{
+        transform: translateX(-70px) translateY(20px) rotate(-25deg);
+}
+.open-left-max {
+  transform: translateX(-100px) translateY(60px) rotate(-50deg);
+}
+.open-cards {
+  width:120px;
+  color:white;
+  background:#49cece;
+  border:3px solid #49cece;
+  margin:0 auto;
+  text-align:center;
+  padding:10px 0;
+  cursor:pointer;
+  transition:0.3s ease all;
+}
+.open-cards:hover {
+  color:#49cece;
+  background:white;
 }

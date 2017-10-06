@@ -60,4 +60,29 @@ $(document).ready(function(){
           $(showMe).addClass("active");
         },200)
       });
+      var one = $('#one');
+      var two = $('#two');
+      var three = $('#three');
+      var four = $('#four');
+      var five = $('#five');
+
+      var openCards = function() {
+        one.toggleClass('open-right-max');
+        setTimeout(function(){
+          two.toggleClass('open-right')
+        },20);
+        setTimeout(function(){
+          three.toggleClass('open-center')
+        },40)
+        setTimeout(function(){
+          four.toggleClass('open-left')
+        },60)
+        setTimeout(function(){
+          five.toggleClass('open-left-max')
+        },80);
+      };
+      $('.open-cards').click(function(){
+        openCards();
+      });
+
 });
