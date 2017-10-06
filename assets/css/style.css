@@ -18,7 +18,7 @@ section {
 #minimal-forms {
   background:#fde5f2;
 }
-h1 {
+h2 {
   text-align:center;
 }
 .h100 {
@@ -28,6 +28,7 @@ h1 {
   color: rgba(0,0,0,0.3) !important;
   margin-left: 2px;
   margin-right: 2px;
+  cursor:pointer;
 }
 .form-dots a.active {
   color:#454146 !important;
@@ -84,6 +85,7 @@ h1 {
     font-size: 30px;
     color: rgba(0,0,0,0.3);
     margin-bottom:0 !important;
+    cursor:pointer;
 }
 
 /*cards*/
